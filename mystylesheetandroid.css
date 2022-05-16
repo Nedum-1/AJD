@@ -6,18 +6,19 @@
 margin: auto;
 margin-left: 3%; margin-right: 3%;
 margin-top: 40px;
-max-height: 1200px; max-width: 700px;
+margin-bottom: 40px;
+max-height: 1250px; max-width: 700px;
 background-color: white;
 border-radius: 9px;}
 body {background-color: rgb(220, 127, 14);}
 #sign {text-align: center; margin-top: 150px;
 font-size: 22px; color: rgba(0, 0, 0, 0.642);}
-.details {margin-top: 100px;}
+.details {margin-top: 70px;}
 #forgot a {color: rgb(99, 159, 183);
 text-decoration: none; margin-left: 30px;}
 #forgot a:hover {text-decoration: underline;}
 #sign a {text-decoration: none; float: Left; margin-left: 30px; padding: 10px; background-color: orange;border-radius: 5px; margin-right: 38px; color: white; font-size: smaller;
-margin-top: -25px;}
+margin-top: -120px;}
 #sign a:hover {background-color: rgba(255, 166, 0, 0.815);}
 #have a  {color: rgb(99, 159, 183);
 text-decoration: none;}
@@ -26,4 +27,5 @@ body {display: flex;
 align-items: center; justify-content: center;}
 #have a:hover {text-decoration: underline;}
 #logo {margin: auto; position: absolute; left: 0px; right: 0px; margin-top: 60px;}
+#have {margin-top: -60px;}
 #forgot {margin-top: 30px;}
