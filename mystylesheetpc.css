@@ -6,7 +6,10 @@
 height: 580px; width: 400px;
 background-color: white;
 margin: auto;
-border-radius: 9px;}
+margin-bottom: 40px;
+margin-top: 40px;
+
+border-radius: 5px;}
 body {background-color: rgb(220, 127, 14);}
 #sign {margin-left: 160px; margin-top: -10px;
 font-size: 22px; color: rgba(0, 0, 0, 0.642);}

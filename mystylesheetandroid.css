@@ -7,13 +7,13 @@ margin: auto;
 margin-left: 3%; margin-right: 3%;
 margin-top: 40px;
 margin-bottom: 40px;
-max-height: 1250px; max-width: 700px;
+min-height: 1250px; max-height: 1300px; max-width: 700px;
 background-color: white;
 border-radius: 9px;}
 body {background-color: rgb(220, 127, 14);}
 #sign {text-align: center; margin-top: 150px;
 font-size: 22px; color: rgba(0, 0, 0, 0.642);}
-.details {margin-top: 70px;}
+.details {margin-top: 40px;}
 #forgot a {color: rgb(99, 159, 183);
 text-decoration: none; margin-left: 30px;}
 #forgot a:hover {text-decoration: underline;}
