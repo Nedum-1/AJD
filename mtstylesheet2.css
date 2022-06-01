@@ -5,7 +5,7 @@
 #dot {float: right;}
 #buy {text-align:center;}
 .content {/*background-color:rgb(128, 128, 128, 10%);*/
-        margin-left: 3%; margin-right: 3%; box-shadow: 2Px 2px 10px gray,  -2Px -2px 10px gray;height: 1700px; max-width: 800px;} 
+        margin-left: 3%; margin-right: 3%; box-shadow: 2Px 2px 10px gray,  -2Px -2px 10px gray;height: 800px; max-width: 800px; margin-bottom: 30px; border-radius: 3px;}  
 #codes {text-align: center;padding: 5px; }
 .detail {margin-left: 25px; margin-right: 25px; margin-top: -12px; }
 #mtn1 {background-color: #ffeeba; padding: 15px; margin-bottom: 0px;}
@@ -18,7 +18,7 @@
 #type {margin-left: 25px;  margin-right: 25px;}
 #networks {width: 100%; padding: 10px; background-color: white;}
 .number { margin-right: 25px; margin-left: 25px;}
-#numbers {width: 100%; padding: 10px; background-color: white; margin-right: 25px; border: none;}
+#numbers {width: 100%; padding: 10px; background-color: white; border: none;}
 .plan { margin-right: 25px; margin-left: 25px;}
 #plans {width: 100%; padding: 10px; background-color: white;}
 .amount {margin-right: 25px; margin-left: 25px;}
