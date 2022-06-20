@@ -9,11 +9,15 @@
                 document.getElementById('nav').style.marginLeft="0px"
                 document.getElementById('meno').style.display="inline-block"
                 document.getElementById('menu').style.display="none"
+       
+document.getElementById('this').style.marginLeft="230.5px"
             }
             function secondfun(x){
                 document.getElementById('nav').style.marginLeft="-300px"
                 document.getElementById('menu').style.display="inline-block"
                 document.getElementById('meno').style.display="none"
+                
+document.getElementById('this').style.marginLeft="0px"
             }
         </script>
     </head>
@@ -38,7 +42,8 @@
                         <li><a href="#">Version 2.2</a></li>
                     </ul>
                 </nav>
-                <div class="this">
+                
+                <div id="this">
                         <h1 id="header"> <img src='https://res.cloudinary.com/arned/image/upload/v1654089079/samples/ARned/menu_s8f95i.png'
                              id="menu" onclick="firstfun('this')"> 
                              <img src='https://res.cloudinary.com/arned/image/upload/v1654089079/samples/ARned/menu_s8f95i.png'
@@ -81,6 +86,6 @@
                             <p class="buy">Buy Now</p>
                     </div>
                 </div>        
-            
+            </div>
     </body>
 </html>
