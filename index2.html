@@ -1,48 +1,86 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="mtstylesheet2.css">
+        <link rel="stylesheet" href="mtstylesheetandroid2.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function firstfun(x){
+                document.getElementById('nav').style.marginLeft="0px"
+                document.getElementById('meno').style.display="inline-block"
+                document.getElementById('menu').style.display="none"
+            }
+            function secondfun(x){
+                document.getElementById('nav').style.marginLeft="-300px"
+                document.getElementById('menu').style.display="inline-block"
+                document.getElementById('meno').style.display="none"
+            }
+        </script>
     </head>
     <body>
-        <header>
-            <h1 id="header"> <img src='https://res.cloudinary.com/arned/image/upload/v1654089079/samples/ARned/menu_s8f95i.png' id="menu"> Welcome</h1>
-        </header>
-        <h1 id="buy">Buy Data Plan</h1>
-        <div class="content">
-            <p id="codes" >Codes for Data balance: </p>
-            <div class="detail">
-                <p id="mtn1">MTN (SME) *461*4#</p>
-                <p id="mtn2">MTN (Gifting) *131*4# or *460*260#</p>
-                <p id="mobile">9Mobile (Gifting) *228#</p>
-                <p id="airtel">Airtel *140#</p>
-                <p id="glo">Glo *127*0#</p>
-            </div>    
-                <p class="network">Network* <br><br> <select id="networks">
-                    <option value="-------" selected>-------</option>
-                    <option value="MTN">MTN</option>
-                    <option value="Airtel">Airtel</option>
-                    <option value="Glo">Glo</option>
-                </select></p>
+            
+                <nav id="nav"> 
+                    <p id="nedum">Nedum</p>
+                    <p id="balance">balance:</p>
+                    <div class="hrr"></div>
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Buy Data</a></li>
+                        <li><a href="#">Buy Airtime</a></li>
+                        <li><a href="#">Utility Payments</a></li>
+                        <li><a href="#">Fund Wallet</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Change Pin</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Developers API</a></li>
+                        <li><a href="#">Logout</a></li>
+                        <li><a href="#">Version 2.2</a></li>
+                    </ul>
+                </nav>
+                <div class="this">
+                        <h1 id="header"> <img src='https://res.cloudinary.com/arned/image/upload/v1654089079/samples/ARned/menu_s8f95i.png'
+                             id="menu" onclick="firstfun('this')"> 
+                             <img src='https://res.cloudinary.com/arned/image/upload/v1654089079/samples/ARned/menu_s8f95i.png'
+                             id="meno" onclick="secondfun('this')">Welcome</h1>
+                    <h1 id="buy">Buy Data Plan</h1>
+                    <div class="content">
+                        <p id="codes" >Codes for Data balance: </p>
+                        <div class="detail">
+                            <p id="mtn1">MTN (SME) *461*4#</p>
+                            <p id="mtn2">MTN (Gifting) *131*4# or *460*260#</p>
+                            <p id="mobile">9Mobile (Gifting) *228#</p>
+                            <p id="airtel">Airtel *140#</p>
+                            <p id="glo">Glo *127*0#</p>
+                        </div>    
+                            <p class="network">Network* <br><br> <select id="networks">
+                                <option value="-------" selected>-------</option>
+                                <option value="MTN">MTN</option>
+                                <option value="Airtel">Airtel</option>
+                                <option value="Glo">Glo</option>
+                            </select></p>
 
-                <p id="type">Data type <br> <select id="datat">
-                    <option value="-------" selected>-------</option>
-                    <option value="SME">SME</option>
-                    <option value="GIFTING">GIFTING</option>
-                    Select Plan Type SME or GIFTING
-                </select></p>
+                            <p id="type">Data type <br> <select id="datat">
+                                <option value="-------" selected>-------</option>
+                                <option value="SME">SME</option>
+                                <option value="GIFTING">GIFTING</option>
+                                Select Plan Type SME or GIFTING
+                            </select></p>
 
-                <p class="number">Mobile number* <br><input type="tel" id="numbers"></input></p>
+                            <p class="number">Mobile number* <br>
+                                <input type="tel"   id="numbers"></input></p>
 
-                <p class="plan">Plan* <br> <select  id="plans">
-                    <option value="-------">-------</option>
-                </select></p>
-                <p class="amount">Amount <br> <input type="number" id="amounts"></p>
+                            <p class="plan">Plan* <br> <select  id="plans">
+                                <option value="-------">-------</option>
+                            </select></p>
+                            <p class="amount">Amount <br> 
+                                 <input type="number" name="num" id="amounts"></p>
 
-                <p class="bypass"> <input type="checkbox" id="check"> Bypass number validator</p>
+                            <p class="bypass"> <input type="checkbox" id="check"> Bypass number validator</p>
 
-                <p class="buy">Buy Now</p>
-        </div>
+                            <p class="buy">Buy Now</p>
+                    </div>
+                </div>        
+            
     </body>
 </html>
