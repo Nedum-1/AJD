@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="mtstylesheetandroid2.css">
+        <link rel="stylesheet" media="screen and (max-width: 800px)" href="mtstylesheetandroid2.css">
+        <link rel="stylesheet" media="screen and (min-width: 801px)" href="mystylesheetpc2.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script>
@@ -9,15 +10,20 @@
                 document.getElementById('nav').style.marginLeft="0px"
                 document.getElementById('meno').style.display="inline-block"
                 document.getElementById('menu').style.display="none"
-       
-document.getElementById('this').style.marginLeft="230.5px"
+                document.getElementById('this').style.marginLeft="230.5px"
+
             }
             function secondfun(x){
                 document.getElementById('nav').style.marginLeft="-300px"
                 document.getElementById('menu').style.display="inline-block"
                 document.getElementById('meno').style.display="none"
-                
-document.getElementById('this').style.marginLeft="0px"
+                document.getElementById('this').style.marginLeft="0px"
+            }
+            function thirdfun(x){
+                document.getElementById('nav').style.marginLeft="-300px"
+                document.getElementById('this').style.marginLeft="0px"
+                document.getElementById('meni').style.display="none"
+                document.getElementById('menu').style.display="inline-block"
             }
         </script>
     </head>
@@ -25,11 +31,11 @@ document.getElementById('this').style.marginLeft="0px"
             
                 <nav id="nav"> 
                     <p id="nedum">Nedum</p>
-                    <p id="balance">balance:</p>
+                    <p id="balance">balance:1,555</p>
                     <div class="hrr"></div>
                     <ul>
                         <li><a href="#">Dashboard</a></li>
-                        <li><a href="#">Buy Data</a></li>
+                        <li><a href="index2.html" id="active">Buy Data</a></li>
                         <li><a href="#">Buy Airtime</a></li>
                         <li><a href="#">Utility Payments</a></li>
                         <li><a href="#">Fund Wallet</a></li>
@@ -44,20 +50,24 @@ document.getElementById('this').style.marginLeft="0px"
                 </nav>
                 
                 <div id="this">
-                        <h1 id="header"> <img src='https://res.cloudinary.com/arned/image/upload/v1654089079/samples/ARned/menu_s8f95i.png'
+                        <h1 id="header"><img src='https://res.cloudinary.com/arned/image/upload/v1654089079/samples/ARned/menu_s8f95i.png'
+                            id="meni" onclick="thirdfun('this')">
+                             <img src='https://res.cloudinary.com/arned/image/upload/v1654089079/samples/ARned/menu_s8f95i.png'
                              id="menu" onclick="firstfun('this')"> 
                              <img src='https://res.cloudinary.com/arned/image/upload/v1654089079/samples/ARned/menu_s8f95i.png'
                              id="meno" onclick="secondfun('this')">Welcome</h1>
                     <h1 id="buy">Buy Data Plan</h1>
                     <div class="content">
-                        <p id="codes" >Codes for Data balance: </p><br>
+                       
                         <div class="detail">
+                            <p id="codes" >Codes for Data balance: </p><br>
                             <p id="mtn1">MTN (SME) *461*4#</p>
                             <p id="mtn2">MTN (Gifting) *131*4# or *460*260#</p>
                             <p id="mobile">9Mobile (Gifting) *228#</p>
                             <p id="airtel">Airtel *140#</p>
                             <p id="glo">Glo *127*0#</p>
                         </div>   <br> 
+                        <div class="forms">
                             <p class="network">Network* <br> <select id="networks">
                                 <option value="-------" selected>-------</option>
                                 <option value="MTN">MTN</option>
@@ -83,7 +93,8 @@ document.getElementById('this').style.marginLeft="0px"
 
                             <p class="bypass"> <input type="checkbox" id="check"> Bypass number validator</p><br>
 
-                            <p class="buy">Buy Now</p>
+                            <p class="buy"><a href="#">Buy Now </a> </p>
+                        </div>    
                     </div>
                 </div>        
             </div>
